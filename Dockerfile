@@ -13,9 +13,6 @@ RUN docker-php-ext-install xdebug-2.4.0RC2
 RUN docker-php-ext-install pcntl
 RUN php -m
 
-# Because some basic tools come in handy...
-RUN apt-get install -q -y less
-
 # Setup
 WORKDIR /tmp
 RUN composer selfupdate
