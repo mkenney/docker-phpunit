@@ -1,4 +1,4 @@
-FROM composer/composer:php7
+FROM mkenney/composer:latest
 
 MAINTAINER Michael Kenney <mkenney@webbedlam.com>
 
@@ -25,4 +25,3 @@ VOLUME ["/app"]
 WORKDIR /app
 
 ENTRYPOINT ["/usr/local/bin/phpunit"]
-
