@@ -1,4 +1,4 @@
-FROM mkenney/composer:latest
+FROM mkenney/composer:php5
 
 MAINTAINER Michael Kenney <mkenney@webbedlam.com>
 
