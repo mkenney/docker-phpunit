@@ -21,4 +21,4 @@ RUN ln -s /tmp/vendor/bin/phpunit /usr/local/bin/phpunit
 VOLUME ["/app"]
 WORKDIR /app
 
-ENTRYPOINT ["/usr/local/bin/phpunit"]
+ENTRYPOINT ["/usr/local/bin/phpunit", "--colors=always"]
