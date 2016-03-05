@@ -1,3 +1,3 @@
 #!/bin/env sh
 
-docker run --rm -v $(pwd):/app:rw mkenney/phpunit $@
+docker run --rm -t -v $(pwd):/app:rw mkenney/phpunit $@
