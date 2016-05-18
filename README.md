@@ -5,7 +5,7 @@ Simple usage:
 
 ```docker pull mkenney/phpunit```
 
-```docker run -v $(pwd):/app:rw mkenney/phpunit -c path/to/phpunit.xml```
+```docker run -v $(pwd):/src:rw mkenney/phpunit -c path/to/phpunit.xml```
 
 Because this runs out of a Docker container, all code required by your
 tests must be available within the current directory. Including files
