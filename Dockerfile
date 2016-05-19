@@ -12,4 +12,4 @@ RUN cd /root/src \
     && mv phpunit-5.2.9.phar /usr/local/bin/phpunit \
     && phpunit --version
 
-ENTRYPOINT ["as-user","/usr/local/bin/phpunit","--colors=always"]
+ENTRYPOINT ["/as-user","/usr/local/bin/phpunit","--colors=always"]
