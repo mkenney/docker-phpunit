@@ -6,7 +6,7 @@ MAINTAINER Michael Kenney <mkenney@webbedlam.com>
 # phpunit
 ##############################################################################
 
-ENV PHPUNIT_VERSION 5.3.4
+ENV PHPUNIT_VERSION 4.8.26
 RUN cd /root/src \
     && wget https://phar.phpunit.de/phpunit-${PHPUNIT_VERSION}.phar \
     && chmod +x phpunit-${PHPUNIT_VERSION}.phar \
