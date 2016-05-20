@@ -4,7 +4,7 @@ The source repo contains a `phpunit` script that wraps executing a docker contai
 
 Because this runs out of a Docker container, all code required by your tests must be available within the current directory. Including files from other directories on the system will not work. The simplest solution is to use [Composer](https://hub.docker.com/r/mkenney/composer/) to install any dependencies.
 
-# SOURCE REPOSITORY
+# Source Repository
 
 * [mkenney/docker-phpunit](https://github.com/mkenney/docker-phpunit)
 
