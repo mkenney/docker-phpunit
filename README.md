@@ -1,4 +1,4 @@
-![PHP v7](https://img.shields.io/badge/PHP-v7.0.6-8892bf.svg) ![phpunit v5](https://img.shields.io/badge/phpunit-v5.3.4-brightgreen.svg) ![MIT License](https://img.shields.io/github/license/mkenney/docker-phpdoc.svg) ![Docker pulls](https://img.shields.io/docker/pulls/mkenney/phpdoc.svg) ![Docker stars](https://img.shields.io/docker/stars/mkenney/phpdoc.svg) ![Github issues](https://img.shields.io/github/issues-raw/mkenney/docker-phpdoc.svg)
+![PHP v7](https://img.shields.io/badge/PHP-v7.0.6-8892bf.svg) ![phpunit v5](https://img.shields.io/badge/phpunit-v5.3.4-brightgreen.svg) ![MIT License](https://img.shields.io/github/license/mkenney/docker-phpunit.svg) ![Docker pulls](https://img.shields.io/docker/pulls/mkenney/phpunit.svg) ![Docker stars](https://img.shields.io/docker/stars/mkenney/phpunit.svg) ![Github issues](https://img.shields.io/github/issues-raw/mkenney/docker-phpunit.svg)
 
 # Environment independent phpunit script
 
