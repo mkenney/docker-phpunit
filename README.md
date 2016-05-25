@@ -1,4 +1,4 @@
-![PHP v7](https://img.shields.io/badge/PHP-v7.0.6-8892bf.svg) ![phpunit v5.3.4](https://img.shields.io/badge/phpunit-v5.3.4-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![PHP v7](https://img.shields.io/badge/PHP-v7.0.6-8892bf.svg) ![phpunit v5](https://img.shields.io/badge/phpunit-v5.3.4-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 # Environment independent phpunit script
 
