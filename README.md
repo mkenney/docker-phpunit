@@ -1,6 +1,6 @@
 ![PHP v7](https://img.shields.io/badge/PHP-v7.0.6-8892bf.svg) ![phpunit v5](https://img.shields.io/badge/phpunit-v5.3.4-brightgreen.svg) ![MIT License](https://img.shields.io/github/license/mkenney/docker-phpunit.svg) ![Docker pulls](https://img.shields.io/docker/pulls/mkenney/phpunit.svg) ![Docker stars](https://img.shields.io/docker/stars/mkenney/phpunit.svg) ![Github issues](https://img.shields.io/github/issues-raw/mkenney/docker-phpunit.svg)
 
-# Environment independent phpunit script
+# Portable phpunit script
 
 The [source repo](https://github.com/mkenney/docker-phpunit) contains a `phpunit` script that wraps executing a docker container to execute [phpunit](https://phpunit.de/). The current directory is mounted into `/src` in the container and a wrapper script executes composer as a user who's `uid` and `gid` matches those properties on that directory. This way any output is written as the directory owner/group instead of root or a random user.
 
