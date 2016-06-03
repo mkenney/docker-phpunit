@@ -1,3 +1,8 @@
 #!/usr/bin/env sh
 
-docker run --rm -t -v $(pwd):/src:rw mkenney/phpunit:php5 $@
+if [ "self-update" == "$1" ]; then
+    docker pull mkenney/php-phpunit
+    wget -nv -O $0 https://raw.githubusercontent.com/mkenney/docker-phpunit/php5/bin/phpunit
+else
+    docker run --rm -t -v $(pwd):/src:rw mkenney/phpunit:php5 $@
+fi
