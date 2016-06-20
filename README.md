@@ -18,6 +18,18 @@ The [source repo](https://github.com/mkenney/docker-phpunit) contains a `phpunit
 
 Because this runs out of a Docker container, all code required by your tests must be available within the current directory. Including files from other directories on the system will not work. The simplest solution is to use [Composer](https://hub.docker.com/r/mkenney/composer/) to install any dependencies.
 
+### Installation
+
+This assumes that you already have [Docker](https://www.docker.com) installed. A running `docker` daemon is required.
+
+Installation is just a matter of putting the [shell script](https://github.com/mkenney/docker-phpunit/blob/master/bin/phpunit) somewhere in your path and making it executable. I like to put my scripts in a `bin/` folder in my home directory:
+* PHP 5
+  `wget -nv -O ~/bin/phpunit https://raw.githubusercontent.com/mkenney/docker-phpunit/php5/bin/phpunit && chmod 0755 ~/bin/phpunit`
+* PHP 7
+  `wget -nv -O ~/bin/phpunit https://raw.githubusercontent.com/mkenney/docker-phpunit/master/bin/phpunit && chmod 0755 ~/bin/phpunit`
+* `phpunit self-update`
+  The `self-update` command pulls down the latest docker image and then updates the shell script itself. If you don't have write permissions on the shell script you'll get a permissions error, you can run the self-update command with `sudo` if needed.
+
 ## Source Repo
 
 * [mkenney/docker-phpunit](https://github.com/mkenney/docker-phpunit)
