@@ -24,10 +24,13 @@ This assumes that you already have [Docker](https://www.docker.com) installed. A
 
 Installation is just a matter of putting the [shell script](https://github.com/mkenney/docker-phpunit/blob/master/bin/phpunit) somewhere in your path and making it executable. I like to put my scripts in a `bin/` folder in my home directory:
 * PHP 5
+
   `wget -nv -O ~/bin/phpunit https://raw.githubusercontent.com/mkenney/docker-phpunit/php5/bin/phpunit && chmod 0755 ~/bin/phpunit`
 * PHP 7
+
   `wget -nv -O ~/bin/phpunit https://raw.githubusercontent.com/mkenney/docker-phpunit/master/bin/phpunit && chmod 0755 ~/bin/phpunit`
 * `phpunit self-update`
+
   The `self-update` command pulls down the latest docker image and then updates the shell script itself. If you don't have write permissions on the shell script you'll get a permissions error, you can run the self-update command with `sudo` if needed.
 
 ## Source Repo
