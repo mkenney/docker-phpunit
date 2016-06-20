@@ -42,8 +42,3 @@ Installation is just a matter of putting the [shell script](https://github.com/m
 * [mkenney/phpunit](https://hub.docker.com/r/mkenney/phpunit/)
 
 Based on [mkenney/php-base](https://hub.docker.com/r/mkenney/php-base/) (debian:jessie) which is simply a php CLI binary built with various tools, most notably Oracle OCI libraries, because they're a pain to install.
-
-# Tagged Dockerfiles
-
-* [latest](https://github.com/mkenney/docker-phpunit/blob/master/Dockerfile), [php7](https://github.com/mkenney/docker-phpunit/blob/master/Dockerfile)
-* [php5](https://github.com/mkenney/docker-phpunit/blob/php5/Dockerfile)
