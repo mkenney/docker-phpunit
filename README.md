@@ -6,11 +6,11 @@
 
 * [latest](https://github.com/mkenney/docker-phpunit/blob/master/Dockerfile), [php7](https://github.com/mkenney/docker-phpunit/blob/master/Dockerfile)
 
-  [![PHP v7](https://img.shields.io/badge/PHP-v7.0.6-8892bf.svg) ![PHPUnit v5](https://img.shields.io/badge/PHPUnit-v5.3.4-brightgreen.svg)](https://github.com/mkenney/docker-phpunit)
+  [![build status](https://travis-ci.org/mkenney/docker-phpunit.svg?branch=master) [![PHP v7](https://img.shields.io/badge/PHP-v7.0.6-8892bf.svg) ![PHPUnit v5](https://img.shields.io/badge/PHPUnit-v5.3.4-brightgreen.svg)](https://github.com/mkenney/docker-phpunit)
 
 * [php5](https://github.com/mkenney/docker-phpunit/blob/php5/Dockerfile)
 
-  [![PHP v5](https://img.shields.io/badge/PHP-v5.6.21-8892bf.svg) ![PHPUnit v4](https://img.shields.io/badge/PHPUnit-v4.8.26-brightgreen.svg)](https://github.com/mkenney/docker-phpunit/tree/php5)
+  [![build status](https://travis-ci.org/mkenney/docker-phpunit.svg?branch=php5) [![PHP v5](https://img.shields.io/badge/PHP-v5.6.21-8892bf.svg) ![PHPUnit v4](https://img.shields.io/badge/PHPUnit-v4.8.26-brightgreen.svg)](https://github.com/mkenney/docker-phpunit/tree/php5)
 
 ## Synopsys
 
@@ -46,6 +46,12 @@ Based on [mkenney/php-base](https://hub.docker.com/r/mkenney/php-base/) (debian:
 ## Change log
 
 ### 2016-07-08
+
+I have created a travis-ci integration that should prevent the issue brought to my attention yesterday. The validation is extremely simple (it just makes sure that phpunit executes successfully). I also disabled automated Docker Hub builds and added a build trigger to the travis-ci integration so no bad builds should accidently make it to Docker Hub.
+
+[Let me know](https://github.com/mkenney/docker-phpunit/issues) if anything unexpected happens or if you uncover any other issues and I will add validation checks to the build.
+
+### 2016-07-07
 
 I received a [pull request](https://github.com/mkenney/docker-phpunit/pull/2) to fix an issue caused by an upstream change. I merged the request into both project branches and all appears to be working correctly to me, however I need to prevent this issue from coming up again. I [created an issue](https://github.com/mkenney/docker-phpunit/issues/3) to address this going forward and I should have it implementd by next week.
 
