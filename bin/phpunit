@@ -1,8 +1,11 @@
 #!/usr/bin/env sh
 
-if [ "self-update" == "$1" ]; then
-    docker pull mkenney/phpunit
-    wget -nv -O $0 https://raw.githubusercontent.com/mkenney/docker-phpunit/master/bin/phpunit && exit 0
+TAG=latest
+BRANCH=master
+
+if [ "self-update" = "$1" ]; then
+    docker pull mkenney/phpunit:$TAG
+    wget -nv -O $0 https://raw.githubusercontent.com/mkenney/docker-phpunit/$BRANCH/bin/phpunit && exit 0
 else
-    docker run --rm -t -v $(pwd):/src:rw mkenney/phpunit $@
+    docker run --rm -t -v $(pwd):/src:rw mkenney/phpunit$TAG $@
 fi
