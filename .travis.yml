@@ -7,7 +7,7 @@ branches:
         - master
         - php7
         - php5
-        - ci-dev
+        - add-ci-build
 
 notifications:
     slack:
