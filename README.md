@@ -42,3 +42,11 @@ Installation is just a matter of putting the [shell script](https://github.com/m
 * [mkenney/phpunit](https://hub.docker.com/r/mkenney/phpunit/)
 
 Based on [mkenney/php-base](https://hub.docker.com/r/mkenney/php-base/) (debian:jessie) which is simply a php CLI binary built with various tools, most notably Oracle OCI libraries, because they're a pain to install.
+
+## Change log
+
+### 2016-07-08
+
+I received a [pull request](https://github.com/mkenney/docker-phpunit/pull/2) to fix an issue caused by an upstream change. I merged the request into both project branches and all appears to be working correctly to me, however I need to prevent this issue from coming up again. I [created an issue](https://github.com/mkenney/docker-phpunit/issues/3) to address this going forward and I should have it implementd by next week.
+
+My appologies for any inconvenience the recent unstable builds may have caused. If anyone has any trouble, please [let me know](https://github.com/mkenney/docker-phpunit/issues).
