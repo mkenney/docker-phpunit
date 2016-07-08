@@ -15,4 +15,4 @@ RUN mkdir -p /root/src \
     && rm -rf /root/src \
     && phpunit --version
 
-ENTRYPOINT ["/as-user","/usr/local/bin/phpunit","--colors=always"]
+ENTRYPOINT ["/run-as-user","/usr/local/bin/phpunit","--colors=always"]
