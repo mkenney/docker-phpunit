@@ -10,8 +10,8 @@ branches:
 language: sh
 
 notifications:
-#    webhooks:
-#        - http://api.9c0.com/notifications/builds
+    webhooks:
+        - http://api.9c0.com/notifications/builds
     slack:
         secure: WIRdJ6WeGxpI/MVcpao9VatooY6+93WC+OGyWoXBmMke/iAVlUIZFoEkxI1IPDQ/TLarcYoiOxmjX4JuO0nO3zL5MrNfKOr/KLKtiIyHG3Q9Dw96eHmvmO52Vtr29J+GTb6K/VTdNJsMfzlcyr89/U3FUqvE76u4+O/EpO4XSwtQhYek4RGROOcVu69NjtTIS73VHhDYRHZMTytx99LWE3be8xCa5hf9oaUL8WRVLblYDrJTE+aLAoJkE81bfeEXrBiPJf8lw+iIu6mFwleGDZnycBeyuLJp0GSJ+4qoYlOeCdxxjsx56Ib2vV5Qkx5sU3gSg6rVUEWyIW3Iz/z2Cpqk6qWRc+BTvsVHkwnN7RI29+0zxuikuf252y8e2XfZead9098P9ucmzsmnQxVhYKpmtgVcJ9oPAG4HnpylEUSUP3f1C6v482sKoh7+os82nBtLZEcRDqy1F3gAMov1M9+Tg6HyVPe/aAoszY854l0w3cFIs6YD7R8IBDikQ+GE9Zwp8s4HC/zlCx5qi55amPBHtApfgOOVCD4lSKxrXKL37OCRLIUmwUno2z1z/q5oiR5KY+INcrcXL84aRD4ix4YnNJXfELB71fWvTzP3rmS423E8UWz8hUUc2MwlcvdKe6NyBu9Sc8F+SIcHqgEd3qQtOBjOf8OMXmNpAd1tbXU=
 
