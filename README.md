@@ -47,7 +47,9 @@ Based on [mkenney/php-base](https://hub.docker.com/r/mkenney/php-base/) (debian:
 
 ### 2016-07-12
 
-I have re-enabled automated Docker Hub builds, with a small difference. Docker builds are no longer triggered by GitHub pushes, instead they are triggered by a deployment script that is executed on successful `travis-ci` builds. There may be an issue with API call throttling on the Docker Hub side, if that seems to be happening I'll dig in further.
+I have re-enabled automated Docker Hub builds, with a small difference. Docker builds are no longer triggered by GitHub pushes, instead they are triggered by a deployment script that is executed on successful `travis-ci` builds. This way, even if builds are failing the image on DockerHub should remain the last stable image at all times.
+
+There may be an issue with API call throttling on the Docker Hub side, if that seems to be happening I'll dig in further.
 
 Please [let me know](https://github.com/mkenney/docker-phpunit/issues) if you have any problems.
 
