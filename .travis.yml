@@ -8,7 +8,6 @@ branches:
         - master
         - php7
         - php5
-        - continuous-deployment
 
 language: sh
 
