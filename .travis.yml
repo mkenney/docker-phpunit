@@ -1,3 +1,6 @@
+env:
+    secure: A5hCef7fiDkbc1N+CWANU8Lb74q1exLNbqpUdqtZKnXngpRje916IuUNr7ivXby3Ohn/MQOzx6HnzhdCvN8GD/AX5ssTghVSWPuw9Yyi1HAHESariGF0+5xO/FltWpwmX9S1R41ugdahP6WV8M+PX+MFSbCAi8mEkNJzTKKwKosmZMJUj2gX5UaWNUdyCGxbvd9+CmPWM2V54d1Y+6VatIVB5vic04ISS3aDxMo5g2Ih4LLdSxAWVdlEL11FZlztjwDWIH9PawemA0N+LZAtr95St3MXODg4mrsg707UoTe9sStkJdThuupOmCd+dn/l4DGFUXt02NLa/qPfRQHwzhlXJDhJCTJU+xsVeE7QMcLlKbcU/LTjrp6y616u0+X3nhvOv0ISTEksOY8SwJhgvp2pOeNupENsk2rA3chupnQkDABC1DBBc6Qml87DIiHgcdi5akBb2Y/FHiXA6YH+IsDzUd3oCxuGNlllRyPB4kc1e/Z+++ZmxR3AoRgZds45KAPagt4d/Q/W+zKiKr1zrj3l+s5EZ6T+DCyqFHjbIRmj/zvAXzgWMkd+LdYG5GuxM1pAdbhzYke7H0kKzHuaE51Iu9JYUFlBV1OYhehRvsvMatz3Cg9roQKNuD0qtDKPPLjOC2OuMCyuMgAq12pMo+KPLM6Y68Kq/krebij2Ipw=
+
 sudo: required
 
 branches:
@@ -10,10 +13,10 @@ branches:
 language: sh
 
 notifications:
-    webhooks:
-        - http://api.9c0.com:80/notifications/builds
     slack:
         secure: WIRdJ6WeGxpI/MVcpao9VatooY6+93WC+OGyWoXBmMke/iAVlUIZFoEkxI1IPDQ/TLarcYoiOxmjX4JuO0nO3zL5MrNfKOr/KLKtiIyHG3Q9Dw96eHmvmO52Vtr29J+GTb6K/VTdNJsMfzlcyr89/U3FUqvE76u4+O/EpO4XSwtQhYek4RGROOcVu69NjtTIS73VHhDYRHZMTytx99LWE3be8xCa5hf9oaUL8WRVLblYDrJTE+aLAoJkE81bfeEXrBiPJf8lw+iIu6mFwleGDZnycBeyuLJp0GSJ+4qoYlOeCdxxjsx56Ib2vV5Qkx5sU3gSg6rVUEWyIW3Iz/z2Cpqk6qWRc+BTvsVHkwnN7RI29+0zxuikuf252y8e2XfZead9098P9ucmzsmnQxVhYKpmtgVcJ9oPAG4HnpylEUSUP3f1C6v482sKoh7+os82nBtLZEcRDqy1F3gAMov1M9+Tg6HyVPe/aAoszY854l0w3cFIs6YD7R8IBDikQ+GE9Zwp8s4HC/zlCx5qi55amPBHtApfgOOVCD4lSKxrXKL37OCRLIUmwUno2z1z/q5oiR5KY+INcrcXL84aRD4ix4YnNJXfELB71fWvTzP3rmS423E8UWz8hUUc2MwlcvdKe6NyBu9Sc8F+SIcHqgEd3qQtOBjOf8OMXmNpAd1tbXU=
+#    webhooks:
+#        - http://api.9c0.com/notifications/builds
 
 
 services:
