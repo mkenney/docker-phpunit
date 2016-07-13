@@ -45,9 +45,15 @@ Based on [mkenney/php-base](https://hub.docker.com/r/mkenney/php-base/) (debian:
 
 ## Change log
 
+### 2016-07-12
+
+I have re-enabled automate Docker Hub, with a small difference. Docker builds are no longer triggered by GitHub pushes, instead they are triggered by a deployment script that is executed on successful `travis-ci` builds. There may be an issue with API call throttling on the Docker Hub side, if that seems to be happening I'll dig in further.
+
+Please [let me know](https://github.com/mkenney/docker-phpunit/issues) if you have any problems.
+
 ### 2016-07-08
 
-I have created a travis-ci integration that should prevent the issue brought to my attention yesterday. The validation is extremely simple (it just makes sure that phpunit executes successfully). I also disabled automated Docker Hub builds and added a build trigger to the travis-ci integration so no bad builds should accidently make it to Docker Hub.
+I have created a `travis-ci` integration that should prevent the issue brought to my attention yesterday. The validation is extremely simple (it just makes sure that phpunit executes successfully). I also disabled automated Docker Hub builds and added a build trigger to the travis-ci integration so no bad builds should accidently make it to Docker Hub.
 
 [Let me know](https://github.com/mkenney/docker-phpunit/issues) if anything unexpected happens or if you uncover any other issues and I will add validation checks to the build.
 
