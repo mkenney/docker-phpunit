@@ -1,3 +1,6 @@
+env:
+    secure: A5hCef7fiDkbc1N+CWANU8Lb74q1exLNbqpUdqtZKnXngpRje916IuUNr7ivXby3Ohn/MQOzx6HnzhdCvN8GD/AX5ssTghVSWPuw9Yyi1HAHESariGF0+5xO/FltWpwmX9S1R41ugdahP6WV8M+PX+MFSbCAi8mEkNJzTKKwKosmZMJUj2gX5UaWNUdyCGxbvd9+CmPWM2V54d1Y+6VatIVB5vic04ISS3aDxMo5g2Ih4LLdSxAWVdlEL11FZlztjwDWIH9PawemA0N+LZAtr95St3MXODg4mrsg707UoTe9sStkJdThuupOmCd+dn/l4DGFUXt02NLa/qPfRQHwzhlXJDhJCTJU+xsVeE7QMcLlKbcU/LTjrp6y616u0+X3nhvOv0ISTEksOY8SwJhgvp2pOeNupENsk2rA3chupnQkDABC1DBBc6Qml87DIiHgcdi5akBb2Y/FHiXA6YH+IsDzUd3oCxuGNlllRyPB4kc1e/Z+++ZmxR3AoRgZds45KAPagt4d/Q/W+zKiKr1zrj3l+s5EZ6T+DCyqFHjbIRmj/zvAXzgWMkd+LdYG5GuxM1pAdbhzYke7H0kKzHuaE51Iu9JYUFlBV1OYhehRvsvMatz3Cg9roQKNuD0qtDKPPLjOC2OuMCyuMgAq12pMo+KPLM6Y68Kq/krebij2Ipw=
+
 sudo: required
 
 branches:
@@ -6,6 +9,8 @@ branches:
         - php7
         - php5
         - continuous-deployment
+
+language: sh
 
 notifications:
     slack:
@@ -22,4 +27,4 @@ script:
     - docker run --rm -ti -v $(pwd):/src:rw mkenney/phpunit:ci-build --version
 
 after_success:
-    - sh ./deploy.sh
+    sh ./deploy.sh
