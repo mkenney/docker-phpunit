@@ -6,11 +6,11 @@
 
 * [latest](https://github.com/mkenney/docker-phpunit/blob/master/Dockerfile), [php7](https://github.com/mkenney/docker-phpunit/blob/master/Dockerfile)
 
-  [![build status](https://travis-ci.org/mkenney/docker-phpunit.svg?branch=master) [![PHP v7](https://img.shields.io/badge/PHP-v7.0.6-8892bf.svg) ![PHPUnit v5](https://img.shields.io/badge/PHPUnit-v5.3.4-brightgreen.svg)](https://github.com/mkenney/docker-phpunit)
+  ![build status](https://travis-ci.org/mkenney/docker-phpunit.svg?branch=master) [![PHP v7](https://img.shields.io/badge/PHP-v7.0.6-8892bf.svg) ![PHPUnit v5](https://img.shields.io/badge/PHPUnit-v5.3.4-brightgreen.svg)](https://github.com/mkenney/docker-phpunit)
 
 * [php5](https://github.com/mkenney/docker-phpunit/blob/php5/Dockerfile)
 
-  [![build status](https://travis-ci.org/mkenney/docker-phpunit.svg?branch=php5) [![PHP v5](https://img.shields.io/badge/PHP-v5.6.21-8892bf.svg) ![PHPUnit v4](https://img.shields.io/badge/PHPUnit-v4.8.26-brightgreen.svg)](https://github.com/mkenney/docker-phpunit/tree/php5)
+  ![build status](https://travis-ci.org/mkenney/docker-phpunit.svg?branch=php5) [![PHP v5](https://img.shields.io/badge/PHP-v5.6.21-8892bf.svg) ![PHPUnit v4](https://img.shields.io/badge/PHPUnit-v4.8.26-brightgreen.svg)](https://github.com/mkenney/docker-phpunit/tree/php5)
 
 ## Synopsys
 
