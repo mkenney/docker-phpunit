@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-echo "Triggering builds for tags 'latest' and 'php7'"
+echo "Triggering builds for branch '$TRAVIS_BRANCH'"
 curl -H "Content-Type: application/json" --data '{"source_type": "Branch" "source_name": "$TRAVIS_BRANCH"}' -X POST https://registry.hub.docker.com/u/mkenney/phpunit/trigger/$DOCKER_TOKEN/
 #if [ "master" = "$TRAVIS_BRANCH" ]; then
 #    echo
