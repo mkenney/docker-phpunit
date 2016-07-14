@@ -26,4 +26,4 @@ script:
     - docker run --rm -ti -v $(pwd):/src:rw mkenney/phpunit:ci-build --version
 
 after_success:
-    sh ./deploy.sh
+    - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sh ./deploy.sh; fi
