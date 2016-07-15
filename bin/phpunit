@@ -7,5 +7,5 @@ if [ "self-update" = "$1" ]; then
     docker pull mkenney/phpunit:$TAG
     wget -nv -O $0 https://raw.githubusercontent.com/mkenney/docker-phpunit/$BRANCH/bin/phpunit && exit 0
 else
-    docker run --rm -t -v $(pwd):/src:rw mkenney/phpunit$TAG $@
+    docker run --rm -t -v $(pwd):/src:rw mkenney/phpunit:$TAG $@
 fi
