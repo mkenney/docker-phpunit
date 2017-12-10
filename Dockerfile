@@ -6,7 +6,7 @@ MAINTAINER Michael Kenney <mkenney@webbedlam.com>
 # phpunit
 ##############################################################################
 
-ENV PHPUNIT_VERSION 5.3.4
+ENV PHPUNIT_VERSION 6.5.3
 RUN mkdir -p /root/src \
     && cd /root/src \
     && wget https://phar.phpunit.de/phpunit-${PHPUNIT_VERSION}.phar \
